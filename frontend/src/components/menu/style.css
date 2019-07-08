@@ -1,0 +1,25 @@
+.navbar-inverse
+{
+    border-radius: 0px !important;
+    padding:5px
+}
+
+
+.navbar-brand img
+{
+    width: 52px;
+    margin-top: -16px;
+}
+
+
+.navbar li a 
+{
+    font-weight: bold !important;
+    color: white !important;
+    font-size: 1.2em !important;
+}
+
+.navbar li:hover
+{
+    opacity: .5;
+}
