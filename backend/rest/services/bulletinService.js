@@ -16,7 +16,7 @@ module.exports = {
 
                 try {
                     let res = await models.bulletin.create(instance);
-
+                
                     resolve(res.id)
                 }
                 catch (msg) {

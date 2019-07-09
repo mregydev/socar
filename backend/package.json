@@ -8,8 +8,8 @@
     "start-production": "cross-env NODE_ENV=production DB_USERNAME=tBbCVSS6pl DB_PASSWORD=TqPRN2vyyj  DB_HOST=remotemysql.com  DB_DATABASE=tBbCVSS6pl node ./app.js",
     "start-dev": "cross-env NODE_ENV=development DB_USERNAME=tBbCVSS6pl DB_PASSWORD=TqPRN2vyyj  DB_HOST=remotemysql.com  DB_DATABASE=tBbCVSS6pl node ./app.js",
     "test": "npm run unittest && npm run integrationtest",
-    "unittest": "cross-env NODE_ENV=test DB_USERNAME=admin DB_PASSWORD=admin  DB_HOST=localhost  DB_DATABASE=testDb ./node_modules/.bin/mocha test/unit/**/*.spec.js",
-    "integrationtest": "cross-env NODE_ENV=test DB_USERNAME=admin DB_PASSWORD=admin  DB_HOST=localhost  DB_DATABASE=testDb ./node_modules/.bin/mocha test/integration/*.test.js"
+    "unittest": "cross-env NODE_ENV=test  ./node_modules/.bin/mocha test/unit/**/*.spec.js",
+    "integrationtest": "cross-env NODE_ENV=test  ./node_modules/.bin/mocha test/integration/*.spec.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -21,6 +21,8 @@
     "node-uuid": "^1.4.8",
     "sequelize": "^3.35.1",
     "sequelize-cli": "^3.2.0",
+    "sinon": "^7.3.2",
+    "sqlite3": "^4.0.9",
     "winston": "^3.2.1"
   },
   "devDependencies": {

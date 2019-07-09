@@ -1,7 +1,6 @@
 {
   "name": "frontendtask",
   "version": "0.1.0",
-
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
@@ -14,15 +13,11 @@
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
-  
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Switch } from 'react-router-dom';
+import { Switch,Redirect } from 'react-router-dom';
 
 import bulletinCreate from '../bulletinCreate'
 
@@ -20,6 +20,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Menu extends React.Component {
 
+  componentWillMount()
+  {
+    <Redirect  to="/list" />
+  }
   render() {  
     return (
       <Router ref='router' >

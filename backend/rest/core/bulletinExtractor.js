@@ -18,6 +18,7 @@ module.exports = {
 
                 //In case file found we store it im memory
                 busboy.on('file', async function (fieldname, file, filename, encoding, mimetype) {
+
                      if(fieldname=='logo' && ( mimetype==='image/png' || mimetype==='image/jpg' || mimetype==='image/jpeg' ))
                     {
                         instance['logourl']=await UploadFile(file)
@@ -29,7 +30,12 @@ module.exports = {
                 });
 
                 busboy.on('finish', function (err) {
+
+                    setTimeout(() => {
+                        
+                    console.log(instance['logourl'])
                     resolve(instance)
+                    }, (2000));
                 });
 
                 req.pipe(busboy);

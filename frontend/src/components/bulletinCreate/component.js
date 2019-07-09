@@ -46,7 +46,7 @@ class BulltenCreate extends React.Component {
 
     if(this.validateInput())
     {
-       this.props.addNewBulletIn({ title: this.refs.title.value, content: this.refs.value,logo:this.refs.logo.files[0] })
+       this.props.addNewBulletIn({ title: this.refs.title.value, content: this.refs.content.value,logo:this.refs.logo.files[0] })
     }
     return false
   };

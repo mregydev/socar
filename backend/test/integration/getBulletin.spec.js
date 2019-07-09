@@ -13,7 +13,7 @@ describe('comment creation page', function () {
     request(app).get('/v1/bulletin/getAllBulletins').expect(200, done);
   });
 
-  it('list comments c', function (done) {
+  it('get bulletin correcltly', function (done) {
     this.models.bulletin.create({ content: 'test', title: 'egydev title', logoImg: 'erem3424.png' }).then(async function (bulletin) {
 
       let res = await request(app).get(`/v1/bulletin/getBulletin/${bulletin.id}`)
