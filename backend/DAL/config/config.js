@@ -12,7 +12,10 @@ module.exports = {
   },
   test: {
     dialect: "sqlite",
-    storage: ":memory:"
+    storage: ":memory:",
+    define: {
+      timestamps: false
+    }
   },
   production: {
     username: process.env.DB_USERNAME,
